@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+
+    </ul>
+    <script>
+        // function add(a){
+        //     return function(b){
+        //         return function(c){
+        //             return a+b+c;
+        //         }
+        //     }
+        // }
+        // console.log(add(1)(2)(3))
+
+
+        // var numbers=[1,2,3,4,5,6]
+        // function getSum(a,b){
+        //     return a*b;
+        // }
+        // console.log(numbers.reduce(getSum));
+
+        // let c=[]
+        // for (let index = 1; index < 101; index++) {
+        //     c.push(index)
+
+        // }
+        // function getSum(a,b){
+        //     return a+b
+        // }
+        // console.log(c.reduce(getSum));
+
+        // const arr = [1, [2, [3, [4, 5]]], 6];
+        // const res1 = arr.flat(Infinity);
+
+
+        // const arr = [1, 1, '1', 17, true, true, false, false, 'true', 'a', {}, {}];
+        // const rest1=Array.from(new Set(arr));
+        // console.log(rest1);
+
+
+            // // 插入十万条数据
+            // const total = 100000;
+            // // 一次插入的数据
+            // const once = 20;
+            // // 插入数据需要的次数
+            // const loopCount = Math.ceil(total / once);
+            // let countOfRender = 0;
+            // const ul = document.querySelector("ul");
+           
+            // // 添加数据的方法
+            // function add() {
+            //     const fragment = document.createDocumentFragment();
+            //     for (let i = 0; i < once; i++) {
+            //         const li = document.createElement('li');
+            //         li.innerText = Math.floor(Math.random() * total);
+            //         fragment.appendChild(li);
+            //     }
+            //     ul.appendChild(fragment);
+  
+            //     countOfRender += 1;
+            //     loop();
+            // }
+            // function loop() {
+            //     if (countOfRender < loopCount) {
+            //         window.requestAnimationFrame(add);
+            //     }
+            // }
+            
+            // loop();
+
+
+
+            var object = { 'a': [{ 'b': { 'c': 3 } }] };
+ 
+            var c=_.get(object, 'a[0].b.c');
+
+            console.log(c);
+
+    
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>
